@@ -1,4 +1,4 @@
-package week1.subject2.ex4;
+package week1.subject2.ex3;
 
 public class StudentTest {
 

@@ -6,7 +6,7 @@ public class Student {
     public String name;
     public int grade;
 
-    public void PrintInfo() {
+    public void printInfo() {
         System.out.println("학번 : " + String.valueOf(id));
         System.out.println("이름 : " + name);
         System.out.println("학년 : " + String.valueOf(grade));

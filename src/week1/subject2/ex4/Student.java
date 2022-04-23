@@ -1,38 +1,32 @@
 package week1.subject2.ex4;
 
-class Subject {
-    int koreaScore;
-    int mathScore;
-    String koreaSubject;
-    String mathSubject;
-
-    public int totalScore() {
-        return koreaScore + mathScore;
-    }
-}
-
 public class Student {
-    int studentID;
-    String studentName;
-    Subject subject = new Subject();
 
-    public void setKorean(String koreanSubject, int koreaScore) {
-        subject.koreaSubject = koreanSubject;
-        subject.koreaScore = koreaScore;
+    private String name;
+    private int cash;
+
+    public Student(String name, int cash) {
+        this.name = name;
+        this.cash = cash;
     }
 
-    public void setMath(String mathSubject, int mathScore) {
-        subject.mathSubject = mathSubject;
-        subject.mathScore = mathScore;
+    public int getCash() {
+        return cash;
     }
 
-    public void showStudentInfo() {
-        System.out.println("학생 " + studentName + "의 총점은 " +
-                String.valueOf(subject.totalScore()) + " 입니다.");
+    public void getPaid(int price) {
+        cash -= price;
     }
 
-    public Student(int studentID, String studentName) {
-        this.studentID = studentID;
-        this.studentName = studentName;
+    public void takeBus(Bus bus) {
+        bus.takeCash(this);
+    }
+
+    public void takeSubway(Subway subway) {
+        subway.takeCash(this);
+    }
+
+    public void showInfo() {
+        System.out.println(name + "님의 남은 돈은 " + String.valueOf(cash) + "원 입니다.");
     }
 }

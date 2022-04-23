@@ -1,6 +1,6 @@
 package week1.subject1.ex5;
 
-public class MyWork {
+public class MyClassTest {
 
     public static void main(String[] args) {
 

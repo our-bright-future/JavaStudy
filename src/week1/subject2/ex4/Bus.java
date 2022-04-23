@@ -1,4 +1,4 @@
-package week1.subject2.ex5;
+package week1.subject2.ex4;
 
 public class Bus {
     private int num;
