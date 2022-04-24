@@ -1,7 +1,5 @@
 package week1.subject2.ex1;
 
-import week1.subject1.ex3.Student;
-
 import java.util.Calendar;
 
 public class MyDate {
