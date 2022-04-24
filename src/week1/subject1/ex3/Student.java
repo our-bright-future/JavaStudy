@@ -11,4 +11,11 @@ public class Student {
         System.out.println("이름 : " + name);
         System.out.println("학년 : " + String.valueOf(grade));
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

@@ -2,11 +2,11 @@ package week1.subject1.ex5;
 
 public class MyClass {
 
-    public String name;
-    public int age;
-    public String gender;
-    public boolean isMarried;
-    public int child;
+    String name;
+    int age;
+    String gender;
+    boolean isMarried;
+    int child;
 
     public MyClass(String name) {
         this.name = name;
