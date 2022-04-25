@@ -19,14 +19,24 @@ public class Student {
     }
 
     public void takeBus(Bus bus) {
-        bus.takeCash(this);
+        if (cash < Bus.price)
+            System.out.println("돈이 부족합니다.");
+        else {
+            bus.boardingPassenger(1);
+            this.cash -= Bus.price;
+        }
     }
 
     public void takeSubway(Subway subway) {
-        subway.takeCash(this);
+        if (cash < Bus.price)
+            System.out.println("돈이 부족합니다.");
+        else {
+            subway.boardingPassenger(1);
+            this.cash -= Subway.price;
+        }
     }
 
     public void showInfo() {
-        System.out.println(name + "님의 남은 돈은 " + String.valueOf(cash) + "원 입니다.");
+        System.out.println(name + "님의 남은 돈은 " + cash + "원 입니다.");
     }
 }

@@ -33,34 +33,26 @@ public class MyDate {
         boolean isLeap = isLeapYear2();
         boolean isValid;
 
-        if (month < 1 || 12 < month)
-            return this.getInfo() + "은 유효하지 않은 날짜입니다.";
-        if (day < 1)
-            return this.getInfo() + "은 유효하지 않은 날짜입니다.";
+        if (month < 1 || 12 < month || day < 1)
+            return getInfo() + "은 유효하지 않은 날짜입니다.";
 
-        if (month == 2) {
-            if (isLeapYear2() && !(day < 30))
-                return this.getInfo() + "은 유효하지 않은 날짜입니다.";
-            else if (!isLeapYear2() && !(day < 29))
-                return this.getInfo() + "은 유효하지 않은 날짜입니다.";
-        }
+        else if (month == 2 && !(day < (isLeap ? 30 : 29)))
+            return getInfo() + "은 유효하지 않은 날짜입니다.";
 
         switch (month) {
             case 1, 3, 5, 7, 8, 10, 12:
                 if (31 < day)
-                    return this.getInfo() + "은 유효하지 않은 날짜입니다.";
+                    return getInfo() + "은 유효하지 않은 날짜입니다.";
                 break;
             case 4, 6, 9, 11:
                 if (30 < day)
-                    return this.getInfo() + "은 유효하지 않은 날짜입니다.";
+                    return getInfo() + "은 유효하지 않은 날짜입니다.";
         }
 
-        // 그냥 getInfo()라면? 인스턴스의 값으로 접근하는게 아닌건가?
-        return this.getInfo() + "은 유효한 날짜입니다.";
+        return getInfo() + "은 유효한 날짜입니다.";
     }
 
     public String getInfo() {
-        return String.valueOf(year) + "년" + String.valueOf(month) + "월 "
-                + String.valueOf(day) + "일";
+        return year + "년 " + month + "월 " + day + "일";
     }
 }

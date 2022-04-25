@@ -7,11 +7,11 @@ public class Student {
 
     public void showStudentInfo() {
         System.out.println("학생 " + studentName + "의 총점은 " +
-                String.valueOf(subject.totalScore()) + " 입니다.");
+                subject.totalScore() + " 입니다.");
     }
 
-    public Student(int studentID, String studentName) {
-        this.studentID = studentID;
+    public Student(int studentId, String studentName) {
+        this.studentID = studentId;
         this.studentName = studentName;
     }
 
