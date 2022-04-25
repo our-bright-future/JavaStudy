@@ -1,4 +1,4 @@
-package week1.subject2.ex3;
+package week1.subject2.ex2;
 
 public class Student {
     int studentID;
@@ -15,13 +15,9 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public void setKorean(String koreanSubject, int koreaScore) {
-        subject.koreaSubject = koreanSubject;
-        subject.koreaScore = koreaScore;
-    }
-
-    public void setMath(String mathSubject, int mathScore) {
-        subject.mathSubject = mathSubject;
-        subject.mathScore = mathScore;
+    public Subject getSubjectWithAuth() {
+        // 교사 혹은 과목을 수정할 수 있는 권한이 있는지 확인한다.
+        // if (isValidUser)
+        return subject.getThis();
     }
 }

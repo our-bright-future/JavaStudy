@@ -1,4 +1,4 @@
-package week1.subject2.ex3;
+package week1.subject2.ex2;
 
 public class Subject {
     int koreaScore;
@@ -18,5 +18,9 @@ public class Subject {
 
     public int totalScore() {
         return koreaScore + mathScore;
+    }
+
+    public Subject getThis() {
+        return this;
     }
 }

@@ -14,7 +14,7 @@ public class Student {
         return cash;
     }
 
-    public void getPaid(int price) {
+    public void pay(int price) {
         cash -= price;
     }
 

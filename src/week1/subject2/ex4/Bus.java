@@ -14,7 +14,7 @@ public class Bus {
         if (student.getCash() < price)
             System.out.println("용돈 받아와라!");
         else {
-            student.getPaid(price);
+            student.pay(price);
             passenger++;
             income += price;
         }
