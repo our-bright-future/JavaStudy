@@ -15,19 +15,23 @@ public class SimpleCalculator {
         this.num2 = num2;
     }
 
-    public void Sum() {
+    public static void sum(int num1, int num2) {
         System.out.println(num1 + num2);
     }
 
-    public void Sub() {
+    public void sum() {
+        System.out.println(num1 + num2);
+    }
+
+    public void sub() {
         System.out.println(num1 - num2);
     }
 
-    public void Mul() {
+    public void mul() {
         System.out.println(num1 * num2);
     }
 
-    public void Div() {
+    public void div() {
         System.out.println(num1 / num2);
     }
 }

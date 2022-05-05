@@ -6,6 +6,8 @@ public class Subject {
     String koreaSubject;
     String mathSubject;
 
+    String authName;
+
     public void setKorean(String koreanSubject, int koreaScore) {
         this.koreaSubject = koreanSubject;
         this.koreaScore = koreaScore;
@@ -21,6 +23,7 @@ public class Subject {
     }
 
     public Subject getThis() {
+
         return this;
     }
 }
