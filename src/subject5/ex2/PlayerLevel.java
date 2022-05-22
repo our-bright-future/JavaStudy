@@ -7,7 +7,7 @@ public abstract class PlayerLevel {
     public abstract void turn();
     public abstract void showLevelMessage();
 
-    public void go(int number) {
+    public final void go(int number) {
         showLevelMessage();
         run();
         for (int i = 0; i < number; i++) {
