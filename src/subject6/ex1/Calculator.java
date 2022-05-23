@@ -8,7 +8,7 @@ public class Calculator implements Calc {
     }
 
     @Override
-    public int substract(int num1, int num2) {
+    public int subtract(int num1, int num2) {
         return num1 - num2;
     }
 
