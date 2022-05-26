@@ -21,5 +21,5 @@ public abstract class Car {
         turnOff();
     }
 
-    abstract void wiper();
+    void wiper() {}
 }
