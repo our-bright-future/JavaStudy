@@ -14,6 +14,6 @@ public class Customer implements Buy, Sell{
 
     @Override
     public void order() {
-        Buy.super.order();
+        System.out.println("고객의 주문");
     }
 }

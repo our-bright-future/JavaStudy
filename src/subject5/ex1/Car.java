@@ -13,7 +13,7 @@ public abstract class Car {
         System.out.println("시동을 끕니다.");
     }
 
-    public void run() {
+    public final void run() {
         startCar();
         drive();
         wiper();
