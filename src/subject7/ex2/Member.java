@@ -1,6 +1,6 @@
 package subject7.ex2;
 
-public class Member {
+public class Member implements Comparable{
 
     private int memberId;
     private String memberName;
@@ -43,5 +43,14 @@ public class Member {
     @Override
     public int hashCode() {
         return String.valueOf(memberId).hashCode();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Member) {
+            Member member = (Member) o;
+            return this.memberId - member.getMemberId();
+        }
+        return -1;
     }
 }
